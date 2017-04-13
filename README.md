@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/deusz/play-rest-embeded-mongo.png)](https://travis-ci.org/deusz/play-rest-embeded-mongo)
+
 # Example application using play 2.5 and reactive mongo
 
 # Configure MongoDB
