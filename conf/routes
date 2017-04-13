@@ -1,0 +1,4 @@
+
+POST     /persons               controllers.PersonController.create
+GET      /persons/:name         controllers.PersonController.findByName(name: String)
+
