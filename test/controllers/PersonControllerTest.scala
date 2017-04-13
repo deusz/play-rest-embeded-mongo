@@ -43,7 +43,8 @@ class PersonControllerTest extends PlaySpec with GuiceOneServerPerSuite with Mon
     }
 
     "get person" in {
-      await(personService.insert(new Person(id = None, name = "ann1", age = 3, createdAt = DateTime.now)))
+      val person: Person = new Person(id = None, name = "ann1", age = 3, createdAt = DateTime.now)
+      await(personService.insert(person))
 
       val Some(result2) = route(app, FakeRequest(GET, "/persons/ann1"))
       status(result2) mustEqual OK
